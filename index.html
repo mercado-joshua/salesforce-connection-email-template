@@ -1,0 +1,489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="x-apple-disable-message-reformatting" />
+        <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+        <meta name="color-scheme" content="light dark" />
+        <meta name="supported-color-schemes" content="light dark" />
+        
+        <!--[if !mso]><!-->
+            <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=edge" />
+        <!--<![endif]-->
+
+        <title>Salesforce Connections Email Template</title>
+
+        <!--[if !mso]><!-- -->
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <!--<![endif]-->
+
+        <style type="text/css">
+            :root {
+                color-scheme: light dark;
+                supported-color-schemes: light dark;
+            }
+
+            *::before,
+            *::after,
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                Margin: 0;
+                padding: 0;
+                min-width: 100%;
+                font-family: 'Poppins', sans-serif;
+                background-color: #dde0e1;
+                color: #333;
+                word-spacing: normal;
+                text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            table { 
+                box-sizing: border-box;
+                border-spacing: 0;
+                border-collapse: collapse;
+                mso-table-lspace: 0;
+                mso-table-rspace: 0;
+            }
+
+            h1, h2, h3, h4, h5, h6, p, td, a, span {
+                box-sizing: border-box;
+                Margin: 0;
+                padding: 0;
+            }
+
+            td, a, span {
+                box-sizing: border-box;
+                border-collapse: collapse;
+                mso-line-height-rule: exactly;
+            }
+
+            a { text-decoration: none; }
+
+            img {
+                display: block;
+                height: auto;
+                max-width: 100%;
+                border: 0;
+                outline: 0;
+                text-decoration: none;
+                -ms-interpolation-mode: bicubic;
+            }
+
+            .preheader {
+                display: none;
+                max-width: 0; 
+                max-height: 0; 
+                font-size: 0; 
+                line-height: 1; 
+                opacity: 0;
+                overflow: hidden; 
+                mso-line-height-rule: exactly;
+                mso-hide: all;
+            }
+
+            .wrapper {
+                width: 100%;
+                table-layout: fixed;
+                background-color: #dde0e1;
+                padding: 0 0 40px 0;
+            }
+
+            .main {
+                width: 100%;
+                max-width: 700px;
+                Margin: 0 auto;
+                background-color: #fafdfe;
+                color: #4a4a4a;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            }
+
+            .wiggle {
+                -webkit-animation-name: wiggle;
+                animation-name: wiggle;
+                -webkit-animation-duration: 6s;
+                animation-duration: 6s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                -webkit-animation-iteration-count: 5;
+                animation-iteration-count: 5;
+            }
+
+            .delay5 { animation-delay: 5s;-webkit-animation-delay: 5s }
+            .delay7 { animation-delay: 7s;-webkit-animation-delay: 7s }
+
+            @-webkit-keyframes wiggle {
+                from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);}
+
+                1%,3%{
+                -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);}
+                5%,9%,15%,20% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);}
+                7%,11%,18% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);}
+                22% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);}
+
+                to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);}
+            }
+
+            @keyframes wiggle {
+                from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);}
+
+                1%,3%{
+                -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);}
+                5%,9%,15%,20% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);}
+                7%,11%,18% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);}
+                22% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);}
+
+                to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);}
+            }
+
+            @media only screen and ( min-width: 679.98px )  {
+                .column {
+                    width: 50% !important;
+                }
+
+                .footer-column {
+                    width: 50% !important;
+                    display: inline-block !important;
+                }
+            }
+
+            /* @media ( prefers-color-scheme: dark ) {
+                body, center, table {
+                    background-color: #2d2d2d !important;
+                    color: #fff !important;
+                }
+            } */
+        </style>
+
+        <!--[if (gte mso 9)|(IE)]>
+            <style type="text/css">
+                body { background-color: #dde0e1 !important; }
+                table { 
+                    border-collapse: collapse !important; 
+                    border: 0;
+                    border-spacing: 0;
+                    Margin: 0;
+                }
+
+                div { Margin: 0 !important; }
+
+                div, td { padding: 0; }
+                
+                table, td, p, a, div, span { font-family: Arial, Helvetica, sans-serif !important; }
+            <style>
+            
+            <noscript>
+                <xml>
+                    <o:OfficeDocumentSettings>
+                        <o:PixelsPerInch>96</o:PixelsPerInch>
+                    </o:OfficeDocumentSettings>
+                </xml>
+            </noscript>
+        <![endif]-->
+    </head>
+    <body>
+        <center class="wrapper">
+            <div role="article" aria-roledescription="email" class="main">
+                <div class="preheader">
+                    Thank you for attending this year’s Connections!
+                </div>
+
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border: none; border-spacing: 0;">
+                    <tr><td align="center" style="padding: 0;">
+                        <!--[if (gte mso 9)|(IE)]>
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 700px; border: none; border-spacing: 0;">
+                                <tr><td style="padding: 0;">
+                        <![endif]-->
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                            <tr><td style="padding: 0;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                    <tr><td valign="top" background="https://i.ibb.co/SPQ7R1h/bg.png" height="544" style="padding: 30px 30px 0 30px; background-position: center top;">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                            <v:rect 
+                                                xmlns:v="urn:schemas-microsoft-com:office:vml" 
+                                                fill="true"
+                                                stroke="false"
+                                                style="height: 544px;"
+                                            >
+                                                <v:fill type="tile" src="https://i.ibb.co/SPQ7R1h/bg.png" />
+                                                <v:textbox inset="0, 0, 0, 0">
+                                        <![endif]-->
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                            <tr><td style="padding: 0; font-size: 0;" align="center">
+                                                <img 
+                                                    width="100"
+                                                    style="width: 100px;"
+                                                    src="https://i.ibb.co/8PmVtxH/logo1.png" 
+                                                    alt="logo1" 
+                                                    border="0"
+                                                />
+                                            </td></tr>
+
+                                            <tr><td style="padding: 20px 0 0 0; font-size: 0;" align="center">
+                                                <img 
+                                                    width="250"
+                                                    style="width: 250px;"
+                                                    src="https://i.ibb.co/tckYX14/logo2.png" 
+                                                    alt="logo2" 
+                                                    border="0"
+                                                />
+                                            </td></tr>
+
+                                            <tr><td style="padding: 20px 0 0 0;" align="center">
+                                                <p style="Margin: 0; max-width: 450px; text-align: left; padding: 0; color: #000000;">Thank you for attending this year’s Connections! <br/><br/> Here are just a few resources to learn how Salesforce can help you connect with your customers in a whole new way.</p>
+                                            </td></tr>
+
+                                            <tr><td style="padding: 20px 0 0 0; font-size: 0;" align="left">
+                                                <img 
+                                                    width="250"
+                                                    style="width: 250px;"
+                                                    src="https://i.ibb.co/VSXXbcv/codey.png" 
+                                                    alt="codey"
+                                                    border="0"
+                                                />
+                                            </td></tr>
+                                        </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                                </v:textbox>
+                                            </v:rect>
+                                        <![endif]-->
+                                    </td></tr>
+                                </table>                        
+                            </td></tr>
+
+                            <tr><td style="padding: 20px 30px 30px 30px;" bgcolor="#e8bf44">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                    <tr><td style="padding: 0;">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
+                                                <tr>
+                                                    <td valign="top" width="50%">
+                                        <![endif]-->
+                                            <table role="presentation" align="left" class="column" width="100%" style="width: 100%; display: inline-block;" border="0" cellpadding="0" cellspacing="0">
+                                                <tr><td style="padding: 0 20px 40px 20px;">
+                                                    <h2 style="Margin: 0; padding: 0 0 10px 0; color: #000000;">Transform customer engagement with deeper insights</h2>
+                                                    <p style="Margin: 0; padding: 0 0 30px 0; color: #000000;">Learn how consumer goods companies can leverage data-fueled insights to meet the rising expectations of today’s customers.</p>
+                                                    
+                                                    <a href="https://example.com/" style="background-color: #042e60; border: 2px solid #042e60; text-decoration: none; padding: 10px 30px; color: #ffffff; border-radius: 4px; display:inline-block; mso-padding-alt:0;text-underline-color:#042e60"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt" hidden>&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;"><b>GET REPORT</b></span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%" hidden>&nbsp;</i><![endif]-->
+                                                    </a>
+                                                </td></tr>
+                                            </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    <td valign="top" width="50%">
+                                        <![endif]-->
+                                            <table role="presentation" align="left" class="column" width="100%" style="width: 100%; display: inline-block;" border="0" cellpadding="0" cellspacing="0">
+                                                <tr><td style="padding: 0;">
+                                                    <img
+                                                        class="wiggle"
+                                                        src="https://i.ibb.co/rFgsT7S/p1.png" 
+                                                        alt="p1"
+                                                        border="0"
+                                                    />
+                                                </td></tr>
+                                            </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        <![endif]-->
+                                    </td></tr>  
+                                </table>
+                            </td></tr>
+
+                            <tr><td style="padding: 30px;" bgcolor="#4f7491">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                    <tr><td style="padding: 0;">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
+                                                <tr>
+                                                    <td valign="top" width="50%">
+                                        <![endif]-->
+                                            <table role="presentation" align="left" class="column" width="100%" style="width: 100%; display: inline-block; float: right;" border="0" cellpadding="0" cellspacing="0">
+                                                <tr><td style="padding: 0 20px 40px 20px;">
+                                                    <h2 style="Margin: 0; padding: 0 0 10px 0; color: #fffdf7;">See why leading CG companies choose Salesforce</h2>
+                                                    <p style="Margin: 0; padding: 0 0 30px 0; color: #fffdf7;">Across the globe, consumer goods companies are choosing Salesforce to help increase sales productivity and effectiveness, respond faster to new business needs, and gain greater visibility across the value chain.</p>
+                                                    
+                                                    <a href="https://example.com/" style="background-color: #ffffff; border: 2px solid #ffffff; text-decoration: none; padding: 10px 30px; color: #042e60; border-radius: 4px; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt" hidden>&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;"><b>GET REPORT</b></span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%" hidden>&nbsp;</i><![endif]-->
+                                                    </a>
+                                                </td></tr>
+                                            </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    <td valign="top" width="50%">
+                                        <![endif]-->
+                                            <table role="presentation" align="left" class="column" width="100%" style="width: 100%; display: inline-block;" border="0" cellpadding="0" cellspacing="0">
+                                                <tr><td style="padding: 0;">
+                                                    <img
+                                                        class="wiggle delay5"
+                                                        src="https://i.ibb.co/tLBGGqy/p2.png" 
+                                                        alt="p2"
+                                                        border="0"
+                                                    />
+                                                </td></tr>
+                                            </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        <![endif]-->
+                                    </td></tr>  
+                                </table>
+                            </td></tr>
+
+                            <tr><td style="padding: 30px;" bgcolor="#9bc7bc">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                    <tr><td style="padding: 0;">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
+                                                <tr>
+                                                    <td valign="top" width="50%">
+                                        <![endif]-->
+                                            <table role="presentation" align="left" class="column" width="100%" style="width: 100%; display: inline-block;" border="0" cellpadding="0" cellspacing="0">
+                                                <tr><td style="padding: 0 20px 40px 20px;">
+                                                    <h2 style="Margin: 0; padding: 0 0 10px 0; color: #000000;">Need a guide on your Salesforce journey?</h2>
+                                                    <p style="Margin: 0; padding: 0 0 30px 0; color: #000000;">Find out how Success Cloud’s experts and services can get you where you want to go, faster.</p>
+                                                    
+                                                    <a href="https://example.com/" style="background-color: #042e60; border: 2px solid #042e60; text-decoration: none; padding: 10px 30px; color: #ffffff; border-radius: 4px; display:inline-block; mso-padding-alt:0;text-underline-color:#042e60"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt" hidden>&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;"><b>GET E-BOOK</b></span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%" hidden>&nbsp;</i><![endif]-->
+                                                    </a>
+                                                </td></tr>
+                                            </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    <td valign="top" width="50%">
+                                        <![endif]-->
+                                            <table role="presentation" align="left" class="column" width="100%" style="width: 100%; display: inline-block;" border="0" cellpadding="0" cellspacing="0">
+                                                <tr><td style="padding: 0;">
+                                                    <img
+                                                        class="wiggle delay7"
+                                                        src="https://i.ibb.co/mBdDQ4m/p3.png" 
+                                                        alt="p3"
+                                                        border="0"
+                                                    />
+                                                </td></tr>
+                                            </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        <![endif]-->
+                                    </td></tr>  
+                                </table>
+                            </td></tr>
+
+                            <tr><td style="padding: 30px;" bgcolor="#013c4c">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                    <tr><td style="padding: 0 0 20px 0;">
+                                        <p style="Margin: 0; padding: 0; color: #fffdf7; line-height: 16px;"><small>Salesforce.com, inc. The Landmark @ One Market, Suite 300, San Francisco, CA, 94105, United States General Inquiries: 647-258-3800 | Fax: 415-901-7040 | Sales: 1-800-NO-SOFTWARE</small></p>
+                                    </td></tr>
+
+                                    <tr><td style="padding: 0;">
+                                        <p style="Margin: 0;">
+                                            <a style="display: inline-block; text-decoration: none;" href="https://imgbb.com/">
+                                                <img 
+                                                    width="30"
+                                                    style="width: 30px;"
+                                                    src="https://i.ibb.co/NZjYj8j/white-twitter.png" 
+                                                    alt="white-twitter"
+                                                    border="0"
+                                                />
+                                            </a>
+
+                                            <a style="display: inline-block; text-decoration: none;" href="https://imgbb.com/">
+                                                <img 
+                                                    width="30"
+                                                    style="width: 30px;"
+                                                    src="https://i.ibb.co/MMzjYp3/white-facebook.png" 
+                                                    alt="white-facebook"
+                                                    border="0"
+                                                />
+                                            </a>
+
+                                            <a style="display: inline-block; text-decoration: none;" href="https://imgbb.com/">
+                                                <img 
+                                                    width="30"
+                                                    style="width: 30px;"
+                                                    src="https://i.ibb.co/5v7H6tY/white-linkedin.png" 
+                                                    alt="white-linkedin"
+                                                    border="0"
+                                                />
+                                            </a>
+
+                                            <a style="display: inline-block; text-decoration: none;" href="https://imgbb.com/">
+                                                <img 
+                                                    width="30"
+                                                    style="width: 30px;"
+                                                    src="https://i.ibb.co/X8hFFgv/white-instagram.png" 
+                                                    alt="white-instagram"
+                                                    border="0"
+                                                />
+                                            </a>
+                                        </p>
+                                    </td></tr>
+
+                                    <tr><td style="padding: 20px 0 0 0;">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                            <tr><td style="padding: 0;" align="center" valign="top">
+                                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                                    <tr>
+                                                        <td class="footer-column" style="padding: 0; display: block; width: 100%;">
+                                                            <p style="Margin: 0; padding: 0 0 30px 0; color: #fffdf7;"><small>© 2018 <a href="#" style="text-decoration: underline; color: #fffdf7;">salesforce.com</a>, inc. All rights reserved.<br/><br/>This email was sent to <a href="#" style="text-decoration: underline; color: #fffdf7;">hello@SmilesDavis.yeah</a><br/><br/><a href="#" style="text-decoration: underline; color: #fffdf7;">Manage Preferences</a> to Unsubscribe | <a href="#" style="text-decoration: underline; color: #fffdf7;">Privacy Statement</a></small></p>
+                                                        </td>
+        
+                                                        <td class="footer-column" style="padding: 0; display: block; width: 100%;" align="center" valign="top">
+                                                            <img
+                                                                width="200"
+                                                                style="width: 200px;"
+                                                                src="https://i.ibb.co/fv1fwq6/footer.png" 
+                                                                alt="footer"
+                                                                border="0"
+                                                            />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td></tr>
+                                        </table>
+                                    </td></tr>
+                                </table>
+                            </td></tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                                </td></tr>
+                            </table>
+                        <![endif]-->
+                    </td></tr>
+                </table>
+            </div>
+        </center>
+    </body>
+</html>
